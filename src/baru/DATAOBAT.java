@@ -356,7 +356,7 @@ try{
                     
                 String sql = "INSERT INTO dataobat VALUES ('" + txtID.getText() + "','" + txtNAMA.getText() + "','" + txtHARGA.getText() + "','" + tgl+ "','" + txtSTOCK.getText() + "','" + kombo + "')";
                 st.executeUpdate(sql);
-                JOptionPane.showMessageDialog(null,"Data, Berhasil Disimpan");
+                JOptionPane.showMessageDialog(null,"Data Berhasil Disimpan");
                 bersih();
                 TampilData();
                         }
@@ -416,7 +416,7 @@ btnSIMPAN.setText("Ubah");
         if(txtID.getText().equals("")){
             JOptionPane.showMessageDialog(this,"Silahkan Pilih Data yang akan dihapus !");
         }else{
-            int jawab = JOptionPane.showConfirmDialog(null, "Data Ini akan diHapus,Lanjutkan?","Konfirmasi",JOptionPane.YES_NO_OPTION );
+            int jawab = JOptionPane.showConfirmDialog(null, "Data Ini akan dihapus,Lanjutkan?","Konfirmasi",JOptionPane.YES_NO_OPTION );
             if (jawab == 0){
                 try {
                     st = cn.createStatement();

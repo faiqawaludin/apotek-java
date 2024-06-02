@@ -16,7 +16,7 @@ public class koneksi_database{
     public static Connection BukaKoneksi(){
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/latihan_crud","root","");
+            Connection cn = DriverManager.getConnection("jdbc:mysql://localhost/db_apotik","root","");
             return cn;
         }catch (Exception e){
             JOptionPane.showMessageDialog(null,e);

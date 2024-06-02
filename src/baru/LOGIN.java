@@ -219,7 +219,7 @@ public class LOGIN extends javax.swing.JFrame {
         // Koneksi ke database
         try {
             // Gantilah URL, user, dan password sesuai dengan konfigurasi database Anda
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_apotik", "root", "1234");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/db_apotik", "root", "");
             String query = "SELECT * FROM datapegawai WHERE username = ? AND password = ?";
             PreparedStatement stmt = conn.prepareStatement(query);
             stmt.setString(1, username);
